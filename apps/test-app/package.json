@@ -14,12 +14,13 @@
   "dependencies": {
     "@modern-js/runtime": "2.35.1",
     "react": "~18.2.0",
-    "react-dom": "~18.2.0"
+    "react-dom": "~18.2.0",
+    "model-kit": "workspace:*"
   },
   "devDependencies": {
     "@modern-js/app-tools": "2.35.1",
     "@modern-js/eslint-config": "2.35.1",
-    "@modern-js/tsconfig":"2.35.1",
+    "@modern-js/tsconfig": "2.35.1",
     "@modern-js-app/eslint-config": "2.35.1",
     "typescript": "~5.0.4",
     "@types/jest": "~29.2.4",

@@ -1,9 +1,10 @@
 {
   "name": "model-kit",
   "version": "0.1.0",
-  "types": "./dist/types/index.d.ts",
+  "types": "./src/index.ts",
   "main": "./dist/lib/index.js",
   "module": "./dist/es/index.js",
+  "source": "./src/index.ts",
   "scripts": {
     "prepare": "modern build",
     "dev": "modern dev",
@@ -12,21 +13,22 @@
     "new": "modern new",
     "upgrade": "modern upgrade"
   },
-  "dependencies": {},
-  "peerDependencies": {},
+  "dependencies": {
+    "valtio": "^1.11.2"
+  },
   "devDependencies": {
-    "@modern-js/module-tools": "2.35.1",
-    "@modern-js/eslint-config": "2.35.1",
-    "@modern-js/tsconfig":"2.35.1",
     "@modern-js-app/eslint-config": "2.35.1",
-    "typescript": "~5.0.4",
+    "@modern-js/eslint-config": "2.35.1",
+    "@modern-js/module-tools": "2.35.1",
+    "@modern-js/tsconfig": "2.35.1",
     "@types/jest": "~29.2.4",
     "@types/node": "~16.11.7",
     "@types/react": "~18.0.26",
-    "rimraf": "~3.0.2",
+    "husky": "~8.0.1",
     "lint-staged": "~13.1.0",
     "prettier": "~2.8.1",
-    "husky": "~8.0.1"
+    "rimraf": "~3.0.2",
+    "typescript": "~5.0.4"
   },
   "sideEffects": [],
   "publishConfig": {

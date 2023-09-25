@@ -33,6 +33,7 @@ importers:
       '@types/react-dom': ~18.0.10
       husky: ~8.0.1
       lint-staged: ~13.1.0
+      model-kit: workspace:*
       prettier: ~2.8.1
       react: ~18.2.0
       react-dom: ~18.2.0
@@ -40,6 +41,7 @@ importers:
       typescript: ~5.0.4
     dependencies:
       '@modern-js/runtime': 2.35.1_rzyliz2j3ixzcs72aaxsyibazq
+      model-kit: link:../../packages/model-kit
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
@@ -71,6 +73,9 @@ importers:
       prettier: ~2.8.1
       rimraf: ~3.0.2
       typescript: ~5.0.4
+      valtio: ^1.11.2
+    dependencies:
+      valtio: 1.11.2_@types+react@18.0.38
     devDependencies:
       '@modern-js-app/eslint-config': 2.35.1_typescript@5.0.4
       '@modern-js/eslint-config': 2.35.1_typescript@5.0.4
@@ -8612,6 +8617,10 @@ packages:
       object-assign: 4.1.1
       react-is: 16.13.1
 
+  /proxy-compare/2.5.1:
+    resolution: {integrity: sha512-oyfc0Tx87Cpwva5ZXezSp5V9vht1c7dZBhvuV/y3ctkgMVUmiAGDVeeB0dKhGSyT0v1ZTEQYpe/RXlBVBNuCLA==}
+    dev: false
+
   /proxy-from-env/1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
     dev: true
@@ -9970,6 +9979,12 @@ packages:
       qs: 6.11.2
     dev: true
 
+  /use-sync-external-store/1.2.0:
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dev: false
+
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
@@ -10010,6 +10025,23 @@ packages:
     resolution: {integrity: sha512-Ii+sehpSfZy+At5nPdnyMhx78fEoPDkR2XW/zimHEL3MyGJQOCQ7WeP20jPYRz7ZCpcKLB21NxuXHF3bxjStBQ==}
     engines: {node: '>= 0.10'}
     dev: true
+
+  /valtio/1.11.2_@types+react@18.0.38:
+    resolution: {integrity: sha512-1XfIxnUXzyswPAPXo1P3Pdx2mq/pIqZICkWN60Hby0d9Iqb+MEIpqgYVlbflvHdrp2YR/q3jyKWRPJJ100yxaw==}
+    engines: {node: '>=12.20.0'}
+    peerDependencies:
+      '@types/react': '>=16.8'
+      react: '>=16.8'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@types/react': 18.0.38
+      proxy-compare: 2.5.1
+      use-sync-external-store: 1.2.0
+    dev: false
 
   /vm-browserify/1.1.2:
     resolution: {integrity: sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==}
